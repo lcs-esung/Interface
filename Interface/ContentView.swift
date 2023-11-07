@@ -20,5 +20,44 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    TabView(selection: .constant(3)) {
+        
+        Text("Home")
+            .tabItem {
+                Image(systemName: "house.fill")
+                Text("Home")
+            }
+            .tag(1)
+        
+        Text("For You")
+            .tabItem {
+                Image("book")
+                Text("For You")
+            }
+            .tag(2)
+        
+        ContentView()
+            .tabItem {
+                Image("cube")
+                Text("Fun")
+            }
+            .tag(3)
+        
+        Text("Sections")
+            .tabItem {
+                Image(systemName: "line.3.horizontal")
+                Text("Sections")
+            }
+            .tag(4)
+        
+        
+        
+        Text("Settings")
+            .tabItem {
+                Image(systemName: "person.fill")
+                Text("Settings")
+            }
+            .tag(5)
+    }
+    .tint(.black)
 }
