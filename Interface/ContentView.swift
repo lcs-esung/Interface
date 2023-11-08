@@ -9,15 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        
+            
+            VStack {
+                Text("Let's have some fun")
+                    .foregroundColor(.black)
+                    .font(Font.custom("Charter-Bold", size: 23))
+                
+                Row(title: "Crossword", details: "Once the puzzel is opened, use tabs in the upper right to read instructions, change difficulty level, sound options and access previous puzzles.")
+                
+            }
+            
         }
-        .padding()
     }
-}
+
 
 #Preview {
     TabView(selection: .constant(3)) {
