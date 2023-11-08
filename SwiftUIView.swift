@@ -13,32 +13,26 @@ struct Row: View {
     
     var body: some View {
         
-        HStack {
-            Image(square)
-                .padding(.trailing, 60)
-
             
             VStack {
                 Text(title)
                     .foregroundColor(.black)
                     .font(Font.custom("Charter-Bold", size: 23))
-                    .padding(.trailing,150)
+                    .padding(.trailing, 70)
+                    .padding(.bottom, 4)
                 
                 
                 Text(details)
                     .foregroundColor(.black)
                     .font(Font.custom("Avenir-Roman", size: 16))
-                    .padding(.trailing, 190)
+                    .padding(.trailing, 110)
  
             }
             
         }
-        
-        
-        
-        
+
     }
-}
+
 
 #Preview {
    Row(title: "Crossword", details: "akjdnawu")
