@@ -19,13 +19,13 @@ struct Row: View {
                     .foregroundColor(.black)
                     .font(Font.custom("Charter-Bold", size: 23))
                     .padding(.bottom, 4)
-                    .padding(.trailing, 70)
+
                 
                 
                 Text(details)
                     .foregroundColor(.black)
                     .font(Font.custom("Avenir-Roman", size: 16))
-                    .padding(.leading,100)
+
  
             }
             
