@@ -31,14 +31,14 @@ struct ContentView: View {
         
         Text("For You")
             .tabItem {
-                Image("book")
+                Image(systemName: "person.crop.square")
                 Text("For You")
             }
             .tag(2)
         
         ContentView()
             .tabItem {
-                Image("cube")
+                Image(systemName: "square.grid.3x3")
                 Text("Fun")
             }
             .tag(3)

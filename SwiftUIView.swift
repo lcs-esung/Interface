@@ -14,13 +14,24 @@ struct Row: View {
     var body: some View {
         
         HStack {
-            Image(systemName: "paperplane")
+            Image(square)
+                .padding(.trailing, 60)
+
             
-            Text(title)
-                .foregroundColor(.black)
+            VStack {
+                Text(title)
+                    .foregroundColor(.black)
+                    .font(Font.custom("Charter-Bold", size: 23))
+                    .padding(.trailing,150)
+                
+                
+                Text(details)
+                    .foregroundColor(.black)
+                    .font(Font.custom("Avenir-Roman", size: 16))
+                    .padding(.trailing, 190)
+ 
+            }
             
-            Text(details)
-                .foregroundColor(.black)
         }
         
         
